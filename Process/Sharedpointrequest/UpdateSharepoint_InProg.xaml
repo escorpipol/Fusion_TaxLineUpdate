@@ -1,0 +1,140 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Arg_RequestLink" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>854,1465.3333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.Graph</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Update Sharepoint Status - Completed" sap:VirtualizedContainerService.HintSize="546,1400.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:KillProcess AppliesTo="{x:Null}" Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="484,136.66666666666666" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="MSEDGE" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: RequestList - Item properties" sap:VirtualizedContainerService.HintSize="484,1113.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="38b94a8e-8515-4c5d-b502-5c2784fc68be" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,894" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Start -  Changing to InProgress  &quot; &amp; Arg_RequestLink]" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Status" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="38b94a8e-8515-4c5d-b502-5c2784fc68be" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://reedelsevier.sharepoint.com/sites/OG-P2PHdesk/Lists/RequestList/DispForm.aspx?ID=12" DesignTimeRectangle="368, 463, 1144, 37" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Status - To Update by RPA Team, Completed, press enter to edit.' aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Status - To Update by RPA Team, *, press enter to edit.' aria-role='button' tag='DIV' type='' class='ReactFieldEditor-core--display' aaname='' /&gt;" Guid="0c2e16f5-243b-41e7-b41c-ad94df44c687" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABHwAAAApCAYAAABHhD54AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQqSURBVHhe7d0/attQHMDx3iSX6Umy5QC9QyFDT5ApQxffwFDaJbOhkL1LlhIIHdKl8OqfbNn682xJjmQc8fnAjzbVk5O+8cuT8iEBAAAAMCuCDwAAAMDMCD4AAAAAMyP4AAAAAMyM4AMAAAAwM4IPAAAAwMwIPgAAAAAzI/gAAAAAzMzbgs+/15Ref6X0skrp+SGl3z/W890Us96L2JPYm9ij2CsAAACAMzgt+ES8+POYiRzm6MSeCT8AAADAxIYHn79PyUmet8x672IPAQAAACYyLPjEo0nZiGEGT+wlAAAAwAT6B5/iZE8mXJjTx0kfAAAAYAL9gk+8d8ZjXBPMek+90wcAAAAYWb/g4wXN003sLQAAAMCIuoNPcbonEyo6ZnX7IX25rszt5+y6c8zT/dUZv//ntLi+St9+5q4dGKd8AAAAgBF1B5/BL2qO4NEOPKvbj2lV+fqcMyT4RKi6u/+avdZvTgg+XuAMAAAAjKg7+Lys8pEiO1/Tt09vDSbjz8UHn9hjAAAAgJF0B5/nh3ykyM3Pm3R33eckz/YU0G6q92yDyTI+a3N9E2Cq91TXbyLTYrn5s/zMxbK8ngk+y4+7dV92caZ+//7fD60vp37f3f3N8OATewwAAAAwku7gM+S3c0UY+XSTnnLXdrMJN9VTNEWQ2d23DTvl10VEiphSRp7mKaIyuFQiS3HP/uta8CniTSUYNX7m1gmfo+ubP0v57qKBwSf2GAAAAGAk5w8+2TXbUz1FJKn+PaYdVeondjbXqyd6Yqrhprq+/chW3L//fs3rR9dnTzQ1f/4+I/gAAAAA4zn7I12tx6uKqUabdjCJ6HL4Ea188Ik17eCzWbt/PGs/5f31wNOxvjNe9RyPdAEAAAAjmuSlzc34UptsJIn7ykgyTvCphpvq+uZnNacefDrW5wJX43GyXuOlzQAAAMCIuoPP0F/LHkHnuvkYVISTMoxE0KlfL4LMLgKdFnxqEan4GfYhpra+ca05zeBzfH37/xL3D36Hj1/LDgAAAIyoO/j8e81HiqOzCSHVR6DqAahxvXbi57Tgs7iPkzXlZ9bvr6/ffn3o+xcndOqfcXR94/+yWLZ//s6JPQYAAAAYSXfwCX8e86HiIqbHY2SXPLG3AAAAACPqF3yKUz4DflvXWec9B5/1njrdAwAAAIysX/AJf58yweIS5h0Hn9hTAAAAgJH1Dz5h6AuczeHxomYAAABgIsOCTyhO+lzq413vYdZ752QPAAAAMKHhwSfEe2cu+kXOFzqxZ97ZAwAAAEzstOBTingRjya9rFJ6fkhO/lRnvRexJ7E3sUdCDwAAAHAmbws+AAAAAFwcwQcAAABgZgQfAAAAgJkRfAAAAABmRvABAAAAmBnBBwAAAGBmBB8AAACAmRF8AAAAAGZG8AEAAACYlZT+A3+h2lSmPYWUAAAAAElFTkSuQmCC" InformativeScreenshot="e72cd3ee41592c6f0dabe1eff17cd1c0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='RequestList - Item properties' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Completed" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="38b94a8e-8515-4c5d-b502-5c2784fc68be" Text="[&quot;In Progress&quot; + &quot;[k(Enter)]&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://reedelsevier.sharepoint.com/sites/OG-P2PHdesk/Lists/RequestList/DispForm.aspx?ID=12" DesignTimeRectangle="371, 505, 1136, 41" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='TextFieldInWell' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextFieldInWell' tag='INPUT' type='text' class='ms-TextField-field field-83' aaname='' /&gt;" Guid="d4c2bc90-0b6d-4f72-85e6-5111b7322e1d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABHQAAAAtCAYAAADPwjyaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANqSURBVHhe7dzNUdtAAIbhdEELHJPUwzA0AQcaSE5wc3KiA2bcBQdoA8pAsVayflYrA9YavJPnmfkmCMu2cn1H4tvvk79VPQAAAACO27bjCDoAAAAAhRB0AAAAAAoj6AAAAAAURtABAAAAKIygAwAAAFAYQQcAAACgMIIOAAAAQGEEHQAAAIDCCDoAAAAAhRF0AAAAAAoj6AAAAAAURtABAAAAKMyHg87PH9/bnwAAAAD4CoIOAAAAQGEEHQAAAIDCCDoAAAAAhRF0AAAAAAqzV9C5OD9LbFU9tOcU42VdXYZrv6ruXx6rm83PN0/NS8/rq+pi9dgcAAAAAByRvYJO47m6v+4DyGd7WJ1Vl+vn9mgfu68/DjrLvw8AAAAgj/846NR35NR35rSHEUEHAAAAOFb5gk54fCl67Cr8rokm20AS/t0+phU/0vS06l+bjS3N9ybPG71/s7lHprpHrdpdrzefOv7/9EHnvd83vN42Fq3b1+euAwAAAGAP+YLO5HgYRdqfz4d3uTTnd8chjgyCUH0cQkva5I6Z8P5hVIk+fyK+Q2d8/cNrr6W/b+56m7/HI+QAAAAAh5Ax6GyMosbuQBIMzp8+0lS/fxhcxuLzk49Eja4ntizo7L7e3Y9zAQAAACyRN+gMQ0b9WNMgpiSDTndO81n940v9xp/fGweV1LVspB4D6ywJOm9dr6ADAAAAHE7moNOHjzqIDO9gec8dOnPxJiW+QyY+DqKoNLb8Dp356xV0AAAAgMPJHnSaiHI1uTMmBJJR5Kijx+D9ddyZvZtmahJwwvungWYSeTrLgs7u6xV0AAAAgMPJH3Ta38d34zSBZN281j6eFMeWJvr0r8///ZuN8DhVfd4gnITI0r9/PubUPhZ0Ut83f72CDgAAAHA4C4LOnHTomQQSAAAAAPaSPeiEcJO4s0bQAQAAAMgjX9DpHklK/10ZQQcAAAAgj3xBBwAAAIBP8eGgAwAAAMDXEnQAAAAACiPoAAAAABRG0AEAAAAojKADAAAAUBhBBwAAAKAwgg4AAABAYQQdAAAAgMK8GXReX1/NzMzMzMzMzOwLF+uCzq+TP1W91JvMzMzMzMzMzOx4tu04go6ZmZmZmZmZWSETdMzMzMzMzMzMClsXdG5P77oDMzMzMzMzMzM77t2e3lX/AGc2mGvqwLFWAAAAAElFTkSuQmCC" InformativeScreenshot="8d565b2a62b2a8f88d3be8957ab5f86e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='RequestList - Item properties' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;End -  Changing to InProgress &quot; &amp; Arg_RequestLink]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1912, -8, 1936, 1048" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEUSURBVDhPY0AHzDkFBkC8H4j/I2EQ3wCqBDcAKQLi91BN6Bgkjt8QoIL7SBqw4ftQpQjA3Nz+Hoj/48VNbciGOEC1QgBWDVgwo6UNYQMmnjz9Hxkgy/F4+f6Xmr0Qhu8DcQCGASAAMgTETtq0BS4Owry+AcgGwHAAigEXXrwEG7Lw4qX/ypOnEWPAfRQDhLv7/zcePPz//fcfYAziEzDgP4oBIGfDDAEBo1nzSDMAZCsMHHjwEC4OwqKRcdgMQPUCPiydnPFffvEqdAPAgUgwIbE2toINUFy2FqYREY3oAKjQAaQYHWtOnfPf/NgF1ESEDQAVCQDxfSAGaUDGIDEBqDL8AKjQAIjPQzWCMIiNJScyMAAAIGu1wTJAuKMAAAAASUVORK5CYII=" InformativeScreenshot="b3c11825e417193831361c7b837b7eca.jpg" Selector="&lt;html app='msedge.exe' htmlwindowname='{}' url='https://reedelsevier.sharepoint.com/sites/OG-P2PHdesk/Lists/RequestList/DispForm.aspx?ID=11' /&gt;" Title="RequestList - Item properties" Url="[Arg_RequestLink]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
