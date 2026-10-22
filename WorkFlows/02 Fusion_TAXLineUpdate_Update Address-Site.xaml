@@ -4,7 +4,7 @@
     <x:Property Name="in_Link" Type="InArgument(x:String)" />
     <x:Property sap2010:Annotation.AnnotationText="Transaction item to be processed." Name="in_TransactionItem" Type="InArgument(sd:DataRow)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1822,5673.333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1822,5743</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="80">
@@ -163,7 +163,7 @@
       <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Update Supplier Site" sap:VirtualizedContainerService.HintSize="1832,5688.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_43">
+  <Sequence DisplayName="Update Supplier Site" sap:VirtualizedContainerService.HintSize="1832,5678" sap2010:WorkflowViewState.IdRef="Sequence_43">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="intRowCount" />
       <Variable x:TypeArguments="x:Int32" Name="intCount" />
@@ -174,7 +174,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <usa:DisplaySubtitleActivity ContinueOnError="{x:Null}" BackgroundColor="Black" BackgroundOpacity="0.8" DisplayName="Display Subtitle" DurationMS="3000" FontSize="38" sap:VirtualizedContainerService.HintSize="1770,81.33333333333333" sap2010:WorkflowViewState.IdRef="DisplaySubtitleActivity_9" Message="Update Address/Site" TextColor="White">
+    <usa:DisplaySubtitleActivity ContinueOnError="{x:Null}" BackgroundColor="Black" BackgroundOpacity="0.8" DisplayName="Display Subtitle" DurationMS="3000" FontSize="38" sap:VirtualizedContainerService.HintSize="1770,80" sap2010:WorkflowViewState.IdRef="DisplaySubtitleActivity_9" Message="Update Address/Site" TextColor="White">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -182,7 +182,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </usa:DisplaySubtitleActivity>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1770,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Update Address/Site&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1770,141" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Update Address/Site&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -190,19 +190,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1770,5273.333333333333" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1770,5266" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1736,5186" sap2010:WorkflowViewState.IdRef="Sequence_44">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1736,5179" sap2010:WorkflowViewState.IdRef="Sequence_44">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1674,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_41" Level="Info" Message="[&quot;Read request file&quot; &amp; in_TransactionItem(11).ToString]">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1674,141" sap2010:WorkflowViewState.IdRef="LogMessage_41" Level="Info" Message="[&quot;Read request file&quot; &amp; in_TransactionItem(11).ToString]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -210,7 +210,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:LogMessage>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1674,4892" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="Maximize" SensitivityOperation="None" WorkbookPath="[in_TransactionItem(11).ToString]">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1674,4887" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="Maximize" SensitivityOperation="None" WorkbookPath="[in_TransactionItem(11).ToString]">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
@@ -385,7 +385,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Registration Number Header"))) OrEls
 String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                   </Assign.Value>
                                                 </Assign>
-                                                <Flowchart sap:VirtualizedContainerService.HintSize="1209.3333333333333,1038.6666666666667" sap2010:WorkflowViewState.IdRef="Flowchart_3">
+                                                <Flowchart sap:VirtualizedContainerService.HintSize="1209,1038" sap2010:WorkflowViewState.IdRef="Flowchart_3">
                                                   <Flowchart.Variables>
                                                     <Variable x:TypeArguments="x:Boolean" Name="IsAddressFound" />
                                                   </Flowchart.Variables>
@@ -394,7 +394,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                       <av:Point x:Key="ShapeLocation">40,22.5</av:Point>
-                                                      <av:Size x:Key="ShapeSize">60,74.66666666666667</av:Size>
+                                                      <av:Size x:Key="ShapeSize">60,75</av:Size>
                                                       <av:PointCollection x:Key="ConnectorLocation">100,60 130,60 130,26.5 300,26.5 300,56.5</av:PointCollection>
                                                       <x:Double x:Key="Width">1175.2587712136838</x:Double>
                                                       <x:Double x:Key="Height">1001.1858823873363</x:Double>
@@ -403,12 +403,12 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                   <Flowchart.StartNode>
                                                     <x:Reference>__ReferenceID13</x:Reference>
                                                   </Flowchart.StartNode>
-                                                  <FlowDecision Condition="[Not String.IsNullOrWhiteSpace((row.ByField(&quot;Site&quot;))) AndAlso Not String.IsNullOrWhiteSpace((row.ByField(&quot;Procurement BU&quot;))) AndAlso (row.ByField(&quot;Toggle B2B?&quot;)).Trim.ToUpper.Contains(&quot;YES&quot;)]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="78.66666666666667,86.66666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
+                                                  <FlowDecision Condition="[Not String.IsNullOrWhiteSpace((row.ByField(&quot;Site&quot;))) AndAlso Not String.IsNullOrWhiteSpace((row.ByField(&quot;Procurement BU&quot;))) AndAlso (row.ByField(&quot;Toggle B2B?&quot;)).Trim.ToUpper.Contains(&quot;YES&quot;)]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         <av:Point x:Key="ShapeLocation">830.5,626.5</av:Point>
-                                                        <av:Size x:Key="ShapeSize">78.66666666666667,86.66666666666667</av:Size>
+                                                        <av:Size x:Key="ShapeSize">79,87</av:Size>
                                                         <av:PointCollection x:Key="TrueConnector">830.5,670 720,670 720,753.5</av:PointCollection>
                                                         <av:PointCollection x:Key="FalseConnector">909.1666666666666,669.8333333333334 939.1666666666667,669.8333333333334 939.1666666666667,670.1666666666666 940,670.1666666666666</av:PointCollection>
                                                       </scg:Dictionary>
@@ -418,11 +418,11 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <av:Point x:Key="ShapeLocation">620,753.5</av:Point>
-                                                            <av:Size x:Key="ShapeSize">200,53.333333333333336</av:Size>
+                                                            <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                             <av:PointCollection x:Key="ConnectorLocation">720,806.8333333333334 720,883.5</av:PointCollection>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <If Condition="[if(String.IsNullOrWhiteSpace(row.ByField(&quot;Toggle B2B?&quot;).ToString),False,row.ByField(&quot;Toggle B2B?&quot;).ToString.ToUpper.Contains(&quot;YES&quot;))]" DisplayName="B2B Toggle" sap:VirtualizedContainerService.HintSize="200,53.333333333333336" sap2010:WorkflowViewState.IdRef="If_13">
+                                                        <If Condition="[if(String.IsNullOrWhiteSpace(row.ByField(&quot;Toggle B2B?&quot;).ToString),False,row.ByField(&quot;Toggle B2B?&quot;).ToString.ToUpper.Contains(&quot;YES&quot;))]" DisplayName="B2B Toggle" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="If_13">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -758,7 +758,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <av:Point x:Key="ShapeLocation">620,883.5</av:Point>
-                                                                <av:Size x:Key="ShapeSize">200,53.333333333333336</av:Size>
+                                                                <av:Size x:Key="ShapeSize">200,53</av:Size>
                                                                 <av:PointCollection x:Key="ConnectorLocation">820,910 940,910</av:PointCollection>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
@@ -905,7 +905,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <av:Point x:Key="ShapeLocation">940,883.5</av:Point>
-                                                                    <av:Size x:Key="ShapeSize">200,53.333333333333336</av:Size>
+                                                                    <av:Size x:Key="ShapeSize">200,53</av:Size>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
                                                                 <If Condition="[IsB2BUpdateDone And IsTaxRegUpdateDone]" sap:VirtualizedContainerService.HintSize="200,53.333333333333336" sap2010:WorkflowViewState.IdRef="If_32">
@@ -953,11 +953,11 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <av:Point x:Key="ShapeLocation">940,643.5</av:Point>
-                                                            <av:Size x:Key="ShapeSize">200,53.333333333333336</av:Size>
+                                                            <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                             <av:PointCollection x:Key="ConnectorLocation">1040,696.8333333333334 1040,883.5</av:PointCollection>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <ueab:WriteCellX Cell="[row.ByField(&quot;Status - For Robot&quot;)]" DisplayName="Please Fill in the parameters" sap:VirtualizedContainerService.HintSize="200,53.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_40" Value="[&quot;Missing columns: &quot; + String.Join(&quot;, &quot;,&#xA;{&#xA;     If(String.IsNullOrWhiteSpace(row.ByField(&quot;Site&quot;).ToString), &quot;Site&quot;, &quot;&quot;),&#xA;        If(String.IsNullOrWhiteSpace(row.ByField(&quot;Toggle B2B?&quot;).ToString), &quot;Toggle B2B?&quot;, &quot;&quot;),&#xA;        If(String.IsNullOrWhiteSpace(row.ByField(&quot;Procurement BU&quot;).ToString), &quot;Procurement BU&quot;, &quot;&quot;)&#xA;}.Where(Function(x) Not String.IsNullOrWhiteSpace(x)))]">
+                                                        <ueab:WriteCellX Cell="[row.ByField(&quot;Status - For Robot&quot;)]" DisplayName="Please Fill in the parameters" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="WriteCellX_40" Value="[&quot;Missing columns: &quot; + String.Join(&quot;, &quot;,&#xA;{&#xA;     If(String.IsNullOrWhiteSpace(row.ByField(&quot;Site&quot;).ToString), &quot;Site&quot;, &quot;&quot;),&#xA;        If(String.IsNullOrWhiteSpace(row.ByField(&quot;Toggle B2B?&quot;).ToString), &quot;Toggle B2B?&quot;, &quot;&quot;),&#xA;        If(String.IsNullOrWhiteSpace(row.ByField(&quot;Procurement BU&quot;).ToString), &quot;Procurement BU&quot;, &quot;&quot;)&#xA;}.Where(Function(x) Not String.IsNullOrWhiteSpace(x)))]">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -975,10 +975,10 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <av:Point x:Key="ShapeLocation">610,223.5</av:Point>
-                                                        <av:Size x:Key="ShapeSize">200,53.333333333333336</av:Size>
+                                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <ueab:WriteCellX Cell="[row.ByField(&quot;Status - For Robot&quot;)]" DisplayName="Please Fill in the parameters" sap:VirtualizedContainerService.HintSize="200,53.333333333333336" sap2010:WorkflowViewState.IdRef="WriteCellX_38" Value="[&quot;Please fill in the ff columns: for tax header update(Supplier Number, Address Name, C)&quot;+&#xA;String.Join(&quot;, &quot;,&#xA;    {&#xA;&#x9;&#x9;If(String.IsNullOrWhiteSpace(row.ByField(&quot;Tax Registration Number&quot;).ToString),&quot;Tax Registration Number&quot;,&quot;&quot;),&#xA;        If(String.IsNullOrWhiteSpace(row.ByField(&quot;Supplier Number&quot;).ToString), &quot;Supplier Number&quot;, &quot;&quot;),&#xA;&#x9;&#x9;If(String.IsNullOrWhiteSpace(row.ByField(&quot;Address Name&quot;).ToString), &quot;Address Name&quot;, &quot;&quot;),&#xA;        If(String.IsNullOrWhiteSpace(row.ByField(&quot;Tax Registration Number Header&quot;).ToString), &quot;Tax Registration Number Header&quot;, &quot;&quot;),&#xA;        If(String.IsNullOrWhiteSpace(row.ByField(&quot;Tax Regime Code&quot;).ToString), &quot;Tax Regime Code&quot;, &quot;&quot;)&#xA;    }.Where(Function(x) Not String.IsNullOrWhiteSpace(x))&#xA;)]">
+                                                    <ueab:WriteCellX Cell="[row.ByField(&quot;Status - For Robot&quot;)]" DisplayName="Please Fill in the parameters" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="WriteCellX_38" Value="[&quot;Please fill in the ff columns: for tax header update(Supplier Number, Address Name, C)&quot;+&#xA;String.Join(&quot;, &quot;,&#xA;    {&#xA;&#x9;&#x9;If(String.IsNullOrWhiteSpace(row.ByField(&quot;Tax Registration Number&quot;).ToString),&quot;Tax Registration Number&quot;,&quot;&quot;),&#xA;        If(String.IsNullOrWhiteSpace(row.ByField(&quot;Supplier Number&quot;).ToString), &quot;Supplier Number&quot;, &quot;&quot;),&#xA;&#x9;&#x9;If(String.IsNullOrWhiteSpace(row.ByField(&quot;Address Name&quot;).ToString), &quot;Address Name&quot;, &quot;&quot;),&#xA;        If(String.IsNullOrWhiteSpace(row.ByField(&quot;Tax Registration Number Header&quot;).ToString), &quot;Tax Registration Number Header&quot;, &quot;&quot;),&#xA;        If(String.IsNullOrWhiteSpace(row.ByField(&quot;Tax Regime Code&quot;).ToString), &quot;Tax Regime Code&quot;, &quot;&quot;)&#xA;    }.Where(Function(x) Not String.IsNullOrWhiteSpace(x))&#xA;)]">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -987,12 +987,12 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                     </ueab:WriteCellX>
                                                   </FlowStep>
-                                                  <FlowDecision x:Name="__ReferenceID13" Condition="[(Not String.IsNullOrWhiteSpace((row.ByField(&quot;Supplier Number&quot;))) and Not String.IsNullOrWhiteSpace((row.ByField(&quot;Address Name&quot;))))]" DisplayName="Is Supplier No &amp; Address Empty?" sap:VirtualizedContainerService.HintSize="160,86.66666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
+                                                  <FlowDecision x:Name="__ReferenceID13" Condition="[(Not String.IsNullOrWhiteSpace((row.ByField(&quot;Supplier Number&quot;))) and Not String.IsNullOrWhiteSpace((row.ByField(&quot;Address Name&quot;))))]" DisplayName="Is Supplier No &amp; Address Empty?" sap:VirtualizedContainerService.HintSize="160,87" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         <av:Point x:Key="ShapeLocation">220,56.5</av:Point>
-                                                        <av:Size x:Key="ShapeSize">160,86.66666666666667</av:Size>
+                                                        <av:Size x:Key="ShapeSize">160,87</av:Size>
                                                         <av:PointCollection x:Key="FalseConnector">380,100 710,100 710,223.5</av:PointCollection>
                                                         <av:PointCollection x:Key="TrueConnector">220,100 110,100 110,163.5</av:PointCollection>
                                                       </scg:Dictionary>
@@ -1002,11 +1002,11 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <av:Point x:Key="ShapeLocation">10,163.5</av:Point>
-                                                            <av:Size x:Key="ShapeSize">200,53.333333333333336</av:Size>
+                                                            <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                             <av:PointCollection x:Key="ConnectorLocation">210,190.16666666666666 240,190.16666666666666 240,156.50000000000003 300.1666666666667,156.50000000000003 300.1666666666667,186.5</av:PointCollection>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <uix:NCheckState DisplayName="Check App State 'Manage Suppliers'" EnableIfExists="False" EnableIfNotExists="False" Exists="[IsInManageSuppliers]" sap:VirtualizedContainerService.HintSize="200,53.333333333333336" sap2010:WorkflowViewState.IdRef="NCheckState_29" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                        <uix:NCheckState DisplayName="Check App State 'Manage Suppliers'" EnableIfExists="False" EnableIfNotExists="False" Exists="[IsInManageSuppliers]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NCheckState_29" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                           <uix:NCheckState.IfExists>
                                                             <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,106" sap2010:WorkflowViewState.IdRef="Sequence_407">
                                                               <sap:WorkflowViewStateService.ViewState>
@@ -1034,12 +1034,12 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                           </uix:NCheckState.Target>
                                                         </uix:NCheckState>
                                                         <FlowStep.Next>
-                                                          <FlowDecision x:Name="__ReferenceID9" Condition="[if(PrevDR is Nothing, True, if(isInManageSuppliers,True,Not(PrevDR(&quot;Supplier Number&quot;).ToString.ToUpper.Contains(row.ByField(&quot;Supplier Number&quot;).ToString.ToUpper) And PrevDR(&quot;Supplier Name for Reference&quot;).ToString.ToUpper.Contains(row.ByField(&quot;Supplier Name for Reference&quot;).ToString.ToUpper))))]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="78.66666666666667,86.66666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_6">
+                                                          <FlowDecision x:Name="__ReferenceID9" Condition="[if(PrevDR is Nothing, True, if(isInManageSuppliers,True,Not(PrevDR(&quot;Supplier Number&quot;).ToString.ToUpper.Contains(row.ByField(&quot;Supplier Number&quot;).ToString.ToUpper) And PrevDR(&quot;Supplier Name for Reference&quot;).ToString.ToUpper.Contains(row.ByField(&quot;Supplier Name for Reference&quot;).ToString.ToUpper))))]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_6">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 <av:Point x:Key="ShapeLocation">280.5,186.5</av:Point>
-                                                                <av:Size x:Key="ShapeSize">78.66666666666667,86.66666666666667</av:Size>
+                                                                <av:Size x:Key="ShapeSize">79,87</av:Size>
                                                                 <av:PointCollection x:Key="TrueConnector">280.5,230 140,230 140,258.5</av:PointCollection>
                                                                 <av:PointCollection x:Key="FalseConnector">359.5,230 490,230 490,258.5</av:PointCollection>
                                                               </scg:Dictionary>
@@ -1049,11 +1049,11 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <av:Point x:Key="ShapeLocation">40,258.5</av:Point>
-                                                                    <av:Size x:Key="ShapeSize">200,83.33333333333333</av:Size>
+                                                                    <av:Size x:Key="ShapeSize">200,81</av:Size>
                                                                     <av:PointCollection x:Key="ConnectorLocation">140,341.8333333333333 140,371.8333333333333 120,371.8333333333333 120,498.5</av:PointCollection>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <Sequence DisplayName="Searching Supplier" sap:VirtualizedContainerService.HintSize="200,83.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_420">
+                                                                <Sequence DisplayName="Searching Supplier" sap:VirtualizedContainerService.HintSize="200,81" sap2010:WorkflowViewState.IdRef="Sequence_420">
                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1374,17 +1374,17 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <av:Point x:Key="ShapeLocation">20,498.5</av:Point>
-                                                                        <av:Size x:Key="ShapeSize">200,83.33333333333333</av:Size>
+                                                                        <av:Size x:Key="ShapeSize">200,81</av:Size>
                                                                         <av:PointCollection x:Key="ConnectorLocation">220,540.1666666666666 329.8333333333333,540.1666666666666 329.8333333333333,576.5</av:PointCollection>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                    <Sequence DisplayName="Line Update" sap:VirtualizedContainerService.HintSize="2160,13715.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_388">
+                                                                    <Sequence DisplayName="Line Update" sap:VirtualizedContainerService.HintSize="2160,12672" sap2010:WorkflowViewState.IdRef="Sequence_388">
                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                         </scg:Dictionary>
                                                                       </sap:WorkflowViewStateService.ViewState>
-                                                                      <If Condition="[if(PrevDR is Nothing,True,if(String.IsNullOrWhiteSpace(PrevDR(&quot;Address Name&quot;).ToString),True,if(isinmanagesuppliers,True,if(Not(PrevDR(&quot;Address Name&quot;).ToString.toupper.Contains(row.ByField(&quot;Address Name&quot;).ToString.ToUpper) and PrevDR(&quot;Supplier Name for Reference&quot;).ToString.ToUpper.Contains(row.ByField(&quot;Supplier Name for Reference&quot;).ToString.ToUpper)), IsSupplierNotFound = False,False))))]" sap:VirtualizedContainerService.HintSize="2098,4326" sap2010:WorkflowViewState.IdRef="If_9">
+                                                                      <If Condition="[if(PrevDR is Nothing,True,if(String.IsNullOrWhiteSpace(PrevDR(&quot;Address Name&quot;).ToString),True,if(isinmanagesuppliers,True,if(Not(PrevDR(&quot;Address Name&quot;).ToString.toupper.Contains(row.ByField(&quot;Address Name&quot;).ToString.ToUpper) and PrevDR(&quot;Supplier Name for Reference&quot;).ToString.ToUpper.Contains(row.ByField(&quot;Supplier Name for Reference&quot;).ToString.ToUpper)), IsSupplierNotFound = False,False))))]" sap:VirtualizedContainerService.HintSize="2098,3518" sap2010:WorkflowViewState.IdRef="If_9">
                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1392,21 +1392,21 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
                                                                         <If.Then>
-                                                                          <Sequence sap:VirtualizedContainerService.HintSize="1146,3395.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_306">
+                                                                          <Sequence sap:VirtualizedContainerService.HintSize="1146,3336" sap2010:WorkflowViewState.IdRef="Sequence_306">
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                               </scg:Dictionary>
                                                                             </sap:WorkflowViewStateService.ViewState>
-                                                                            <uix:NCheckState DisplayName="Check App State 'Edit Address : VERSAILL…'" sap:VirtualizedContainerService.HintSize="1104,534.6666666666666" sap2010:WorkflowViewState.IdRef="NCheckState_38" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                            <uix:NCheckState DisplayName="Check App State 'Edit Address : VERSAILL…'" sap:VirtualizedContainerService.HintSize="1104,489" sap2010:WorkflowViewState.IdRef="NCheckState_38" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                               <uix:NCheckState.IfExists>
-                                                                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,274.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_437">
+                                                                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_437">
                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                     </scg:Dictionary>
                                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save and Close'" sap:VirtualizedContainerService.HintSize="388,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_136" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save and Close'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_136" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                     <uix:NClick.Target>
                                                                                       <uix:TargetAnchorable BrowserURL="fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="9f649b05-2d9e-4499-be58-f89b4f474ac0" DesignTimeRectangle="1672, 210, 104, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' class='xiz' tag='TABLE' /&gt;&lt;webctrl aaname='Save and Close' aria-role='button' type='' tag='A' class='xrg' check:innerText='Save and Close' /&gt;" Guid="0fddef8b-c923-40b2-8146-56908aa2f4a0" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='1w-0IwNlf9Js' title='Supplier: MAXENCE BAHRI - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                                                                                         <uix:TargetAnchorable.Anchors>
@@ -1425,7 +1425,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                 </uix:TargetAnchorable>
                                                                               </uix:NCheckState.Target>
                                                                             </uix:NCheckState>
-                                                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Addresses'" sap:VirtualizedContainerService.HintSize="1104,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_89" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Addresses'" sap:VirtualizedContainerService.HintSize="1104,157" sap2010:WorkflowViewState.IdRef="NClick_89" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                               <uix:NClick.Target>
                                                                                 <uix:TargetAnchorable BrowserURL="fa-ewqc-dev4-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="d0ea985e-ecd4-4978-8e24-21a9f261833b" CvTextArea="92, 324, 54, 11" CvTextArgument="Addresses" CvType="Text" DesignTimeRectangle="86, 318, 67, 27" DesignTimeScaleFactor="0.8999999761581421" FuzzySelectorArgument="&lt;webctrl aaname=' Merge Date Merged from Supplier Merged into Supplier' aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' class='x1gd' aaname='' tag='DIV' check:innerText='Addresses' /&gt;" Guid="85935472-266b-4f05-a430-b0ec1cc9829d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAfCAYAAAC1bdCFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGTSURBVGhD7ZdRasMwDIZzh5DcJZRcJ4Scp+1ZCr3HHrv2ZdfQkB3Lsmv/nQeDwvRBGVM9x/r8K7COjCpdXjAiJgdgcgAmB2ByACYHYHIAJgdgcgC/kHOn89zTuF3zL4THcSp+X6u/K+1ybic6zAut80K1NmsSavV3pVkON3g43uWncFloHHoah4nWTUko1q+0ht8HL9mJc+t0KnndXht6Wi97dYs1LVvX5Wx8mbLHROebLH9JoxweqT0xLkEneri6b8IfXo8drksDLFD28uv4b5KkhTWu2ZBaL5kbTlMZ6ywsPKc1uW1y+GCyOTex34RLRxwzOUStnkjLUqMToW49rBXJIDVJelRyW1LDNMnBByhIqNVLctCNSoP6PRdHjvfRCSkhFyAJfU2DnBhVQSKOxwfXQ/Nhb7/u6b0WnpWMczaCybhFaclz/kROceN4uPKLt1bP5OSjlYxuTGlxDCujFVOkX+pto/VzOf8QkwMwOQCTAzA5AJMDMDkAkwMwOQCTAzA5gC78L2I8I3I+Pr/sk32+AZf/htXQ3wnrAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='mnizox21i' title='Supplier: PWC ADVISORY SPOLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA SPK - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                                                                                   <uix:TargetAnchorable.Anchors>
@@ -1434,9 +1434,9 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                 </uix:TargetAnchorable>
                                                                               </uix:NClick.Target>
                                                                             </uix:NClick>
-                                                                            <usa:DisplaySubtitleActivity ContinueOnError="{x:Null}" BackgroundColor="Black" BackgroundOpacity="0.8" DisplayName="Display Subtitle" DurationMS="3000" FontSize="38" sap:VirtualizedContainerService.HintSize="1104,81.33333333333333" sap2010:WorkflowViewState.IdRef="DisplaySubtitleActivity_20" Message="Searching Address" TextColor="White" />
-                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1104,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_60" Message="[&quot;Searching Address&quot;]" />
-                                                                            <Assign sap:VirtualizedContainerService.HintSize="1104,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_136">
+                                                                            <usa:DisplaySubtitleActivity ContinueOnError="{x:Null}" BackgroundColor="Black" BackgroundOpacity="0.8" DisplayName="Display Subtitle" DurationMS="3000" FontSize="38" sap:VirtualizedContainerService.HintSize="1104,80" sap2010:WorkflowViewState.IdRef="DisplaySubtitleActivity_20" Message="Searching Address" TextColor="White" />
+                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1104,141" sap2010:WorkflowViewState.IdRef="LogMessage_60" Message="[&quot;Searching Address&quot;]" />
+                                                                            <Assign sap:VirtualizedContainerService.HintSize="1104,81" sap2010:WorkflowViewState.IdRef="Assign_136">
                                                                               <Assign.To>
                                                                                 <OutArgument x:TypeArguments="x:Boolean">[IsAddressFound]</OutArgument>
                                                                               </Assign.To>
@@ -1444,8 +1444,8 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                 <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                                                                               </Assign.Value>
                                                                             </Assign>
-                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1104,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_78" Message="[Row.ByField(&quot;Address Name&quot;).Trim]" />
-                                                                            <uix:NCheckState DisplayName="Check App State 'Address name'" sap:VirtualizedContainerService.HintSize="1104,1922" sap2010:WorkflowViewState.IdRef="NCheckState_20" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1104,141" sap2010:WorkflowViewState.IdRef="LogMessage_78" Message="[Row.ByField(&quot;Address Name&quot;).Trim]" />
+                                                                            <uix:NCheckState DisplayName="Check App State 'Address name'" sap:VirtualizedContainerService.HintSize="1104,1919" sap2010:WorkflowViewState.IdRef="NCheckState_20" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                               <uix:NCheckState.IfExists>
                                                                                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="554,1702" sap2010:WorkflowViewState.IdRef="Sequence_322">
                                                                                   <Sequence.Variables>
@@ -1468,9 +1468,9 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                                           <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Address Name'" sap:VirtualizedContainerService.HintSize="388,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_134" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                             <uix:NClick.Target>
-                                                                                              <uix:TargetAnchorable BrowserURL="fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="91917d8d-8e10-4051-a096-0a79888f9c30" DesignTimeRectangle="71, 412, 185, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[String.Format(&quot;&lt;webctrl tag='A' class='xmx' aaname='{0}' /&gt;&quot;,  row.ByField(&quot;Address Name&quot;).ToString.Trim.&#xD;&#xA;Replace(&quot;&amp;&quot;, &quot;&amp;amp;&quot;).&#xD;&#xA;Replace(&quot;'&quot;, &quot;&amp;apos;&quot;))]" FuzzyAccuracy="0.7" Guid="c1cff1e1-1780-44bf-8602-df14a64f9a20" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='bsidAiuFT93_' title='Supplier: CPME PARIS ILE-DE-FRANCE - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                                                                                              <uix:TargetAnchorable BrowserURL="fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="91917d8d-8e10-4051-a096-0a79888f9c30" DesignTimeRectangle="71, 412, 185, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[String.Format(&quot;&lt;webctrl tag='A' class='xmx' aaname='{0}' /&gt;&quot;,  row.ByField(&quot;Address Name&quot;).ToString.Trim.&#xA;Replace(&quot;&amp;&quot;, &quot;&amp;amp;&quot;).&#xA;Replace(&quot;'&quot;, &quot;&amp;apos;&quot;))]" FuzzyAccuracy="0.7" Guid="c1cff1e1-1780-44bf-8602-df14a64f9a20" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='bsidAiuFT93_' title='Supplier: CPME PARIS ILE-DE-FRANCE - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                                                                                                 <uix:TargetAnchorable.Anchors>
-                                                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                                                                     <uix:Target Accuracy="1" CVScreenId="91917d8d-8e10-4051-a096-0a79888f9c30" CvTextArea="69, 379, 94, 15" CvTextArgument="Address Name" CvType="Text" DesignTimeRectangle="69, 379, 94, 15" ElementType="Text" Guid="cd7bf661-1cca-4fb3-ad8c-2be80df9b8ab" SearchSteps="CV" />
                                                                                                   </scg:List>
                                                                                                 </uix:TargetAnchorable.Anchors>
@@ -1517,7 +1517,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                 </Sequence>
                                                                               </uix:NCheckState.IfExists>
                                                                               <uix:NCheckState.IfNotExists>
-                                                                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,523.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_323">
+                                                                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,522" sap2010:WorkflowViewState.IdRef="Sequence_323">
                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1543,9 +1543,9 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                 </Sequence>
                                                                               </uix:NCheckState.IfNotExists>
                                                                               <uix:NCheckState.Target>
-                                                                                <uix:TargetAnchorable BrowserURL="fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="5797fafd-17cb-4d0b-ad5e-5f443bb01c78" DesignTimeRectangle="70, 412, 58, 12" DesignTimeScaleFactor="1" ElementType="Text" FuzzyAccuracy="1" FuzzySelectorArgument="[String.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='xmx' aaname='{0}*' check:innerText='{0}*' /&gt;&quot;, row.ByField(&quot;Address Name&quot;).ToString.Trim.&#xD;&#xA;Replace(&quot;&amp;&quot;, &quot;&amp;amp;&quot;).&#xD;&#xA;Replace(&quot;'&quot;, &quot;&amp;apos;&quot;))]" Guid="f08ff6e7-0978-402c-bdc9-d4ae4d7382b9" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='vTAubzNgkuo9' title='Supplier: PLANETE SOCIAL - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                                                                <uix:TargetAnchorable BrowserURL="fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="5797fafd-17cb-4d0b-ad5e-5f443bb01c78" DesignTimeRectangle="70, 412, 58, 12" DesignTimeScaleFactor="1" ElementType="Text" FuzzyAccuracy="1" FuzzySelectorArgument="[String.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='xmx' aaname='{0}*' check:innerText='{0}*' /&gt;&quot;, row.ByField(&quot;Address Name&quot;).ToString.Trim.&#xA;Replace(&quot;&amp;&quot;, &quot;&amp;amp;&quot;).&#xA;Replace(&quot;'&quot;, &quot;&amp;apos;&quot;))]" Guid="f08ff6e7-0978-402c-bdc9-d4ae4d7382b9" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='vTAubzNgkuo9' title='Supplier: PLANETE SOCIAL - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                                                                                   <uix:TargetAnchorable.Anchors>
-                                                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                                                       <uix:Target CVScreenId="5797fafd-17cb-4d0b-ad5e-5f443bb01c78" CvTextArea="69, 379, 94, 15" CvTextArgument="Address Name" CvType="Text" DesignTimeRectangle="68, 379, 95, 15" ElementType="Text" Guid="03018f05-5595-406b-9a50-fc2944f29ad0" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                                                                     </scg:List>
                                                                                   </uix:TargetAnchorable.Anchors>
@@ -1602,26 +1602,26 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                           </Sequence>
                                                                         </If.Else>
                                                                       </If>
-                                                                      <If Condition="[IsAddressFound]" sap:VirtualizedContainerService.HintSize="2098,9238.666666666666" sap2010:WorkflowViewState.IdRef="If_42">
+                                                                      <If Condition="[IsAddressFound]" sap:VirtualizedContainerService.HintSize="2098,9003" sap2010:WorkflowViewState.IdRef="If_42">
                                                                         <If.Then>
-                                                                          <Sequence sap:VirtualizedContainerService.HintSize="2064,9055.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_425">
+                                                                          <Sequence sap:VirtualizedContainerService.HintSize="2064,8821" sap2010:WorkflowViewState.IdRef="Sequence_425">
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                               </scg:Dictionary>
                                                                             </sap:WorkflowViewStateService.ViewState>
-                                                                            <uix:NCheckState DisplayName="Check App State 'PL8992630813'" sap:VirtualizedContainerService.HintSize="2022,8968" sap2010:WorkflowViewState.IdRef="NCheckState_21" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                            <uix:NCheckState DisplayName="Check App State 'PL8992630813'" sap:VirtualizedContainerService.HintSize="2022,8733" sap2010:WorkflowViewState.IdRef="NCheckState_21" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                               <uix:NCheckState.IfExists>
-                                                                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,584.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_356">
+                                                                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,577" sap2010:WorkflowViewState.IdRef="Sequence_356">
                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                     </scg:Dictionary>
                                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                                  <usa:DisplaySubtitleActivity ContinueOnError="{x:Null}" BackgroundColor="Black" BackgroundOpacity="0.8" DisplayName="Display Subtitle" DurationMS="3000" FontSize="38" sap:VirtualizedContainerService.HintSize="434,81.33333333333333" sap2010:WorkflowViewState.IdRef="DisplaySubtitleActivity_33" Message="Already in the Tax Registration table" TextColor="White" />
-                                                                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="LogMessage_70" Message="[&quot;Already in the Tax Registration table&quot;]" />
-                                                                                  <ueab:WriteCellX Cell="[row.ByField(&quot;Status - For Robot&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_26" Value="[&quot;Already in the Tax Registration table&quot;]">
+                                                                                  <usa:DisplaySubtitleActivity ContinueOnError="{x:Null}" BackgroundColor="Black" BackgroundOpacity="0.8" DisplayName="Display Subtitle" DurationMS="3000" FontSize="38" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="DisplaySubtitleActivity_33" Message="Already in the Tax Registration table" TextColor="White" />
+                                                                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_70" Message="[&quot;Already in the Tax Registration table&quot;]" />
+                                                                                  <ueab:WriteCellX Cell="[row.ByField(&quot;Status - For Robot&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_26" Value="[&quot;Already in the Tax Registration table&quot;]">
                                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1632,7 +1632,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                 </Sequence>
                                                                               </uix:NCheckState.IfExists>
                                                                               <uix:NCheckState.IfNotExists>
-                                                                                <Sequence DisplayName="Address Update" sap:VirtualizedContainerService.HintSize="1472,8748" sap2010:WorkflowViewState.IdRef="Sequence_342">
+                                                                                <Sequence DisplayName="Address Update" sap:VirtualizedContainerService.HintSize="1472,8476" sap2010:WorkflowViewState.IdRef="Sequence_342">
                                                                                   <Sequence.Variables>
                                                                                     <Variable x:TypeArguments="x:Boolean" Name="isCreateTaxRegistrationNotVisible" />
                                                                                   </Sequence.Variables>
@@ -1642,15 +1642,15 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                     </scg:Dictionary>
                                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1410,53.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                                                                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1410,52" sap2010:WorkflowViewState.IdRef="CommentOut_8">
                                                                                     <ui:CommentOut.Body>
-                                                                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,164" sap2010:WorkflowViewState.IdRef="Sequence_337">
+                                                                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,293" sap2010:WorkflowViewState.IdRef="Sequence_337">
                                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                           </scg:Dictionary>
                                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                                        <If Condition="[row.ByField(&quot;Country&quot;).ToString.ToUpper.Contains(&quot;FRANCE&quot;)]" sap:VirtualizedContainerService.HintSize="388,53.333333333333336" sap2010:WorkflowViewState.IdRef="If_17">
+                                                                                        <If Condition="[row.ByField(&quot;Country&quot;).ToString.ToUpper.Contains(&quot;FRANCE&quot;)]" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="If_17">
                                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1765,7 +1765,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                       </scg:Dictionary>
                                                                                     </sap:WorkflowViewStateService.ViewState>
                                                                                   </ui:CommentOut>
-                                                                                  <If Condition="[Not(String.IsNullOrWhiteSpace(row.ByField(&quot;Tax Registration Number&quot;).ToString)) AndAlso Not(String.IsNullOrWhiteSpace(row.ByField(&quot;Tax Regime Code&quot;).ToString))]" sap:VirtualizedContainerService.HintSize="1410,6996.666666666667" sap2010:WorkflowViewState.IdRef="If_40">
+                                                                                  <If Condition="[Not(String.IsNullOrWhiteSpace(row.ByField(&quot;Tax Registration Number&quot;).ToString)) AndAlso Not(String.IsNullOrWhiteSpace(row.ByField(&quot;Tax Regime Code&quot;).ToString))]" sap:VirtualizedContainerService.HintSize="1410,6727" sap2010:WorkflowViewState.IdRef="If_40">
                                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1773,22 +1773,22 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                       </scg:Dictionary>
                                                                                     </sap:WorkflowViewStateService.ViewState>
                                                                                     <If.Then>
-                                                                                      <Sequence sap:VirtualizedContainerService.HintSize="1376,6813.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_401">
+                                                                                      <Sequence sap:VirtualizedContainerService.HintSize="1370,6545" sap2010:WorkflowViewState.IdRef="Sequence_401">
                                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                           </scg:Dictionary>
                                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                                        <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[isCreateTaxRegistrationNotVisible = False]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1334,837.3333333333334" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
+                                                                                        <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[isCreateTaxRegistrationNotVisible = False]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1328,828" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
                                                                                           <ui:InterruptibleDoWhile.Body>
-                                                                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,668" sap2010:WorkflowViewState.IdRef="Sequence_357">
+                                                                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,662" sap2010:WorkflowViewState.IdRef="Sequence_357">
                                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                 </scg:Dictionary>
                                                                                               </sap:WorkflowViewStateService.ViewState>
-                                                                                              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="388,138.66666666666666" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="3" Version="V4" />
-                                                                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="388,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_108" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                                              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="3" Version="V4" />
+                                                                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_108" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                                 <uix:NClick.Target>
                                                                                                   <uix:TargetAnchorable BrowserURL="fa-ewqc-dev4-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="e581b825-e74f-4b49-860a-02944a9075a6" CvElementArea="177, 844, 28, 30" CvType="Button" DesignTimeRectangle="180, 847, 23, 24" DesignTimeScaleFactor="0.8999999761581421" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' class='xiz' tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='x1kb' aaname='Create' /&gt;" Guid="0bb4e0cb-9335-490f-acd4-9b39861efd91" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADKSURBVEhL7ZZBCsMgEEU9gkvP5hU8SDdddJlFoXRR6G1ctPQS7puFwpQfMKAEIqJDoD4YyIT4n4YQRhARWWtJa01KKZJSNivkIRf5QOCitSQv5MMjYMYNYww555YdtAJ5yEU+PCKeqrUogtx4OhGP2pPoGLIFHwJ953kt9CVUyV7vD53Ol7XQlzBkCd1kIQS6P55JTddbIkOfP4N1Obsy730SXFpYl3MsGetr3KLbB7LFkOVUyVh/xLX8gYx14GEd5ViHVOyAa/z+AbV/O16fKAEFAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='mnizox21i' title='Supplier: PWC ADVISORY SPOLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA SPK - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                                                                                                     <uix:TargetAnchorable.Anchors>
@@ -1797,7 +1797,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                   </uix:TargetAnchorable>
                                                                                                 </uix:NClick.Target>
                                                                                               </uix:NClick>
-                                                                                              <uix:NCheckState DisplayName="Check App State 'Create Tax Registration'" EnableIfExists="False" EnableIfNotExists="False" Exists="[isCreateTaxRegistrationNotVisible]" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NCheckState_22" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                                              <uix:NCheckState DisplayName="Check App State 'Create Tax Registration'" EnableIfExists="False" EnableIfNotExists="False" Exists="[isCreateTaxRegistrationNotVisible]" sap:VirtualizedContainerService.HintSize="388,177" sap2010:WorkflowViewState.IdRef="NCheckState_22" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                                 <uix:NCheckState.IfExists>
                                                                                                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,106" sap2010:WorkflowViewState.IdRef="Sequence_358">
                                                                                                     <sap:WorkflowViewStateService.ViewState>
@@ -1833,7 +1833,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                             </scg:Dictionary>
                                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                                         </ui:InterruptibleDoWhile>
-                                                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Tax Regime Code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1334,257.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_60" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Text="[row.ByField(&quot;Tax Regime Code&quot;).Trim]" Version="V4">
+                                                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Tax Regime Code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1328,254" sap2010:WorkflowViewState.IdRef="NTypeInto_60" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Text="[row.ByField(&quot;Tax Regime Code&quot;).Trim]" Version="V4">
                                                                                           <uix:NTypeInto.Target>
                                                                                             <uix:TargetAnchorable BrowserURL="fa-ewqc-dev4-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="1d18a5a0-d6cc-4cfe-a8bd-049b84ebb8ad" CvElementArea="774, 334, 172, 29" CvType="InputBox" DesignTimeRectangle="777, 336, 142, 25" DesignTimeScaleFactor="0.8999999761581421" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='xpj' aaname='Tax Regime Code' /&gt;" Guid="4fc6da05-fbac-480d-ad27-bb484baeb671" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJIAAAAdCAYAAABBnTWDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEiSURBVHhe7dsxbsJAEEBRjuAq67P5CNDnFChHoEifs/gSkNgGgwlRoEiyaGSNISAjGE/5R3qSBbj7WpqdUWQYhxnpQ57nMcuymKZpTJIE6CWNSCvSzL+Q5IMQwtULwC1PIcTp7C0+v7y2IUld8sV4PIlFWcWf3z+glzQirUgzEtH3/tCGpH9nRIR7SSsaUrP7akPSo+ryx8AtGtJmuyMk2J1C+iQk2GlIdbMlJNgRElxoSKt1Q0iwIyS40JCqek1IsCMkuNCQimVNSLAjJLjQkD6qFSHBrguJEwlDcCLBBSHBhYb0Xi4JCXaEBBca0oKQMAQhwYWGNC+qNiTubONR53e2FxoSWyR4xOUWSXcisdcGi6u9No2JTVvco3fTlmGGzhF9ooHsBEKA+AAAAABJRU5ErkJggg==" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='mnizox21i' title='Supplier: PWC ADVISORY SPOLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA SPK - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                                                                                               <uix:TargetAnchorable.Anchors>
@@ -1857,7 +1857,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                             </scg:Dictionary>
                                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                                         </uix:NTypeInto>
-                                                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Registration Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1334,257.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_61" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Text="[row.ByField(&quot;Tax Registration Number&quot;).Trim]" Version="V4">
+                                                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Registration Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1328,254" sap2010:WorkflowViewState.IdRef="NTypeInto_61" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Text="[row.ByField(&quot;Tax Registration Number&quot;).Trim]" Version="V4">
                                                                                           <uix:NTypeInto.Target>
                                                                                             <uix:TargetAnchorable BrowserURL="fa-ewqc-dev4-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="1d18a5a0-d6cc-4cfe-a8bd-049b84ebb8ad" CvElementArea="775, 756, 147, 28" CvType="InputBox" DesignTimeRectangle="777, 757, 143, 25" DesignTimeScaleFactor="0.8999999761581421" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='x25' aaname='Registration Number' /&gt;" Guid="ca024ea1-d1fc-4126-a81f-159da3143293" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJMAAAAdCAYAAACuX169AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACqSURBVHhe7dshDsJQFETR7hzDEipwJKwFW8M6EAQN/eQZREtDCyPPJMf0V177umYWWjf9YPbr3jGdh0vbH05t1x9hleqlupnFVA/X2709niOsUr1UN7OYqrTpz/BNdSMmIsREjJiIERMxYiJGTMSIiRgxESMmYsREjJiIERMxYiJGTMSIiRgxESMmYsREjJiIERMxH2NyncJWi9cp7ubYavFuzuzficliewHnyWZfuxbvXAAAAABJRU5ErkJggg==" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='mnizox21i' title='Supplier: PWC ADVISORY SPOLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA SPK - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                                                                                               <uix:TargetAnchorable.Anchors>
@@ -1881,7 +1881,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                             </scg:Dictionary>
                                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                                         </uix:NTypeInto>
-                                                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Start Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1334,257.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_62" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Text="01-Jan-2000" Version="V4">
+                                                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Start Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1328,254" sap2010:WorkflowViewState.IdRef="NTypeInto_62" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Text="01-Jan-2000" Version="V4">
                                                                                           <uix:NTypeInto.Target>
                                                                                             <uix:TargetAnchorable BrowserURL="fa-ewqc-dev4-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="1d18a5a0-d6cc-4cfe-a8bd-049b84ebb8ad" DesignTimeRectangle="1150, 659, 108, 26" DesignTimeScaleFactor="0.8999999761581421" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='INPUT' class='x2b' placeholder='dd-mmm-yyyy' aaname='Start Date' /&gt;" Guid="3a3adcdc-9e13-4452-bcf0-536cd7f8bf7c" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='mnizox21i' title='Supplier: PWC ADVISORY SPOLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA SPK - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                                                                                               <uix:TargetAnchorable.Anchors>
@@ -1905,7 +1905,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                             </scg:Dictionary>
                                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                                         </uix:NTypeInto>
-                                                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Issuing Tax Authority'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="1334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_63" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Issuing Tax Authority'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="1328,218" sap2010:WorkflowViewState.IdRef="NTypeInto_63" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                           <uix:NTypeInto.Target>
                                                                                             <uix:TargetAnchorable BrowserURL="fa-ewqc-dev4-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="1d18a5a0-d6cc-4cfe-a8bd-049b84ebb8ad" CvElementArea="1148, 593, 170, 28" CvType="InputBox" DesignTimeRectangle="1150, 595, 142, 25" DesignTimeScaleFactor="0.8999999761581421" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='xpj' aaname='Issuing Tax Authority' /&gt;" Guid="6a8f4852-eb5f-46af-aa00-242390409cdc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJIAAAAdCAYAAABBnTWDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADoSURBVHhe7du7DoJQEEVRvtrWxtrKRDsTqSy14398IC9BjFqo1wwmYqBQmCn3SVZDKHemu55jzGBe8wNjffYJyV8HbjTz3XAyB/42XQZuMF7UIUlE98cT6EQiulxvdUhSV/Mn4BcJKS/PhAQdCelYlIQEnXdIJ0KCjoSU5gUhQYeQYEJCSrKckKBDSDAhIUVpRkjQISSYkJDCOCUk6BASTEhI+yghJOhUIXGRoMVFgglCggkJaXeICQk6hAQTEtKWkKBFSDAhIW3CiJCgU12k75B4RYI+WhfJX/GuDd213rUxphkhMZO9AJsR6Np/grXXAAAAAElFTkSuQmCC" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='mnizox21i' title='Supplier: PWC ADVISORY SPOLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA SPK - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                                                                                               <uix:TargetAnchorable.Anchors>
@@ -1927,7 +1927,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                             </scg:Dictionary>
                                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                                         </uix:NTypeInto>
-                                                                                        <If Condition="[Not(String.IsNullOrWhiteSpace(row.ByField(&quot;Tax Registration Type&quot;).ToString.Trim))]" sap:VirtualizedContainerService.HintSize="1334,510" sap2010:WorkflowViewState.IdRef="If_29">
+                                                                                        <If Condition="[Not(String.IsNullOrWhiteSpace(row.ByField(&quot;Tax Registration Type&quot;)))]" sap:VirtualizedContainerService.HintSize="1328,427" sap2010:WorkflowViewState.IdRef="If_29">
                                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1935,13 +1935,13 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                             </scg:Dictionary>
                                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                                           <If.Then>
-                                                                                            <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_374">
+                                                                                            <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_374">
                                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                 </scg:Dictionary>
                                                                                               </sap:WorkflowViewStateService.ViewState>
-                                                                                              <uix:NSelectItem DisplayName="Select Item 'Tax Registration Type'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NSelectItem_8" Item="[row.ByField(&quot;Tax Registration Type&quot;).ToString.Trim]" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                                              <uix:NSelectItem DisplayName="Select Item 'Tax Registration Type'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NSelectItem_8" Item="[row.ByField(&quot;Tax Registration Type&quot;).ToString.Trim]" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                                 <uix:NSelectItem.Items>
                                                                                                   <scg:List x:TypeArguments="x:String" Capacity="15">
                                                                                                     <x:String></x:String>
@@ -1984,7 +1984,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                             </Sequence>
                                                                                           </If.Else>
                                                                                         </If>
-                                                                                        <If Condition="[if(Not(row.ByField(&quot;Tax Regime Code&quot;).ToString.ToUpper.Contains(&quot;FR VAT&quot;)) ,False,If(String.IsNullOrWhiteSpace(row.ByField(&quot;Country&quot;).ToString),True,row.ByField(&quot;Country&quot;).ToString.ToUpper.Contains(&quot;FRANCE&quot;)) )]" sap:VirtualizedContainerService.HintSize="1334,2096.6666666666665" sap2010:WorkflowViewState.IdRef="If_21">
+                                                                                        <If Condition="[if(Not(row.ByField(&quot;Tax Regime Code&quot;).ToString.ToUpper.Contains(&quot;FR VAT&quot;)) ,False,If(String.IsNullOrWhiteSpace(row.ByField(&quot;Country&quot;)),True,row.ByField(&quot;Country&quot;).ToString.ToUpper.Contains(&quot;FRANCE&quot;)) )]" sap:VirtualizedContainerService.HintSize="1328,2160" sap2010:WorkflowViewState.IdRef="If_21">
                                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1992,21 +1992,21 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                             </scg:Dictionary>
                                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                                           <If.Then>
-                                                                                            <Sequence sap:VirtualizedContainerService.HintSize="452,1832.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_345">
+                                                                                            <Sequence sap:VirtualizedContainerService.HintSize="452,1898" sap2010:WorkflowViewState.IdRef="Sequence_345">
                                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                 </scg:Dictionary>
                                                                                               </sap:WorkflowViewStateService.ViewState>
-                                                                                              <If Condition="[Not(String.IsNullOrWhiteSpace(row.ByField(&quot;TAX&quot;).ToString)  OR row.ByField(&quot;Tax Registration Type&quot;).ToString.ToUpper.Contains(&quot;VAT&quot;))]" sap:VirtualizedContainerService.HintSize="410,1745.3333333333333" sap2010:WorkflowViewState.IdRef="If_24">
+                                                                                              <If Condition="[Not(String.IsNullOrWhiteSpace(row.ByField(&quot;TAX&quot;))  OR row.ByField(&quot;Tax Registration Type&quot;).ToUpper.Contains(&quot;VAT&quot;))]" sap:VirtualizedContainerService.HintSize="410,1810" sap2010:WorkflowViewState.IdRef="If_24">
                                                                                                 <If.Then>
-                                                                                                  <Sequence sap:VirtualizedContainerService.HintSize="376,1562" sap2010:WorkflowViewState.IdRef="Sequence_352">
+                                                                                                  <Sequence sap:VirtualizedContainerService.HintSize="376,1548" sap2010:WorkflowViewState.IdRef="Sequence_352">
                                                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                       </scg:Dictionary>
                                                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into 'TAX'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="334,257.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_64" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Text="[row.ByField(&quot;TAX&quot;).ToString.Trim]" Version="V4">
+                                                                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into 'TAX'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="334,254" sap2010:WorkflowViewState.IdRef="NTypeInto_64" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Text="[row.ByField(&quot;TAX&quot;).ToString.Trim]" Version="V4">
                                                                                                       <uix:NTypeInto.Target>
                                                                                                         <uix:TargetAnchorable BrowserURL="fa-ewqc-dev5-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="c73dc39d-45c0-48ad-b661-20a925bc003d" DesignTimeRectangle="755, 342, 157, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='xpj' aaname='Tax' /&gt;" Guid="5c9f96a0-3826-405f-9647-b74b1d386854" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='58jgg5yj6' title='Supplier: IDEAS EXPUESTAS EDGON S DE RL DE CV - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                                                                                                           <uix:TargetAnchorable.Anchors>
@@ -2024,8 +2024,8 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                         </uix:VerifyExecutionTypeIntoOptions>
                                                                                                       </uix:NTypeInto.VerifyOptions>
                                                                                                     </uix:NTypeInto>
-                                                                                                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,91.33333333333333" sap2010:WorkflowViewState.IdRef="Delay_33" />
-                                                                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Validation Type'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_71" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                                                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Delay_33" />
+                                                                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Validation Type'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_71" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                                       <uix:NTypeInto.Target>
                                                                                                         <uix:TargetAnchorable BrowserURL="fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="159a95ef-c150-4cc6-aa96-a59eed53ae64" CvElementArea="752, 666, 189, 31" CvType="InputBox" DesignTimeRectangle="754, 668, 157, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='xpj' aaname='Validation Type' /&gt;" Guid="9911d300-002f-4747-829f-717515c124da" InformativeScreenshot="a433b0ef8b72f7e8fc0d4873db8ec42e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='25wuabnr5' title='Supplier: ETAI - EDITIONS TECHNIQUES POUR - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                                                                                           <uix:TargetAnchorable.Anchors>
@@ -2041,8 +2041,8 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                         </InArgument>
                                                                                                       </uix:NTypeInto.Text>
                                                                                                     </uix:NTypeInto>
-                                                                                                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="334,91.33333333333333" sap2010:WorkflowViewState.IdRef="Delay_34" />
-                                                                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Validation Type'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,257.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_70" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Text="ORA_FR_VAT" Version="V4">
+                                                                                                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Delay_34" />
+                                                                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Validation Type'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,254" sap2010:WorkflowViewState.IdRef="NTypeInto_70" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Text="ORA_FR_VAT" Version="V4">
                                                                                                       <uix:NTypeInto.Target>
                                                                                                         <uix:TargetAnchorable BrowserURL="fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="159a95ef-c150-4cc6-aa96-a59eed53ae64" CvElementArea="752, 666, 189, 31" CvType="InputBox" DesignTimeRectangle="754, 668, 157, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='xpj' aaname='Validation Type' /&gt;" Guid="9911d300-002f-4747-829f-717515c124da" InformativeScreenshot="a433b0ef8b72f7e8fc0d4873db8ec42e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='25wuabnr5' title='Supplier: ETAI - EDITIONS TECHNIQUES POUR - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                                                                                           <uix:TargetAnchorable.Anchors>
@@ -2060,7 +2060,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                         </uix:VerifyExecutionTypeIntoOptions>
                                                                                                       </uix:NTypeInto.VerifyOptions>
                                                                                                     </uix:NTypeInto>
-                                                                                                    <uix:NSelectItem DisplayName="Select Item 'Validation Level'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NSelectItem_10" Item="Warning" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                                                    <uix:NSelectItem DisplayName="Select Item 'Validation Level'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NSelectItem_10" Item="Warning" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                                       <uix:NSelectItem.Items>
                                                                                                         <scg:List x:TypeArguments="x:String" Capacity="4">
                                                                                                           <x:String></x:String>
@@ -2079,7 +2079,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                         </uix:TargetAnchorable>
                                                                                                       </uix:NSelectItem.Target>
                                                                                                     </uix:NSelectItem>
-                                                                                                    <uix:NSelectItem DisplayName="Select Item 'Duplicate Validation Le…'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NSelectItem_11" Item="No validation" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                                                    <uix:NSelectItem DisplayName="Select Item 'Duplicate Validation Le…'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NSelectItem_11" Item="No validation" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                                       <uix:NSelectItem.Items>
                                                                                                         <scg:List x:TypeArguments="x:String" Capacity="7">
                                                                                                           <x:String></x:String>
@@ -2104,7 +2104,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                   </Sequence>
                                                                                                 </If.Then>
                                                                                                 <If.Else>
-                                                                                                  <Sequence sap:VirtualizedContainerService.HintSize="300,80.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_353">
+                                                                                                  <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_353">
                                                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2116,7 +2116,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                             </Sequence>
                                                                                           </If.Then>
                                                                                           <If.Else>
-                                                                                            <Sequence sap:VirtualizedContainerService.HintSize="300,80.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_346">
+                                                                                            <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_346">
                                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2125,7 +2125,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                             </Sequence>
                                                                                           </If.Else>
                                                                                         </If>
-                                                                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="1334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_109" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="1328,157" sap2010:WorkflowViewState.IdRef="NClick_109" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                           <uix:NClick.Target>
                                                                                             <uix:TargetAnchorable BrowserURL="fa-ewqc-dev4-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="173d7c52-3540-403f-a2cd-94c7ac831c6e" CvElementArea="1278, 853, 34, 28" CvTextArea="1286, 861, 19, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1279, 854, 32, 26" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='BUTTON' class='xux p_AFTextOnly' aaname='OK' check:innerText='OK' /&gt;" Guid="e7a2cd7c-5238-471f-af4f-def99ad48051" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAeCAYAAABE4bxTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIKSURBVFhH1ZfLbtpAFIbnZUDhdSCh6Yu0SxLYN69QhViilbrIKlIWjUSURYJJ+gxVArGxsQ3h0tUfHXsGjy9jpYgMxNKv43Px+T9sFjbDjh0sXdj2sQKazub4fn6FrydtfPl2qkXkRZ7knQGixkW3j9l8gcXyHxbL5bvH2XyJi64ZemeAiNYLpgimL1pFnuSdAaJb6E+m4YDHo66cvHOBwuFgoj0qgcb+BGM/0B4LgVw+mIyBor6ZvhLI8Xw4Yz+KQhrytwHJUShd31BfCTRyPdiuF0ahTG7sgzEWq9JCX/TNFsqMoWaI+Z+ohXNlHJuKfa6nBqJmoTgMGUa1PziqRFAm5RLQqsfKODJzdklSAlnOGJbj8igk8gdu3kRP7veaKDGGqkHnrdW5UY/uYNVQ7YvzQqDnEb+AxzjvoMoYSo37VF+qc6BSpRw9zvqPgn1xrgSiZlrD1XlsnOxL9bvobsn/sepZdmd6/38BxbpHgz+yO7nOIUJjAVTvxPNsH0ZmV1JKoKHtFKtdC391qdHntT4aewxsr4lbym85XDs5zw462V2S1geSTYQEDCkNZDs4O+CPTqqlpQQa2M5WpAQiWhpYJ/7uXifvXEqfDj/nXlcINLBGeLJG2mMh0DakBCLabehjANGL9t+BhcdnW6vIM/clnz5Ffl3eaIUiL/LM/QzauQ/FXTl2DugVrZnyKkJ7tIgAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='mnizox21i' title='Supplier: PWC ADVISORY SPOLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA SPK - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                                                                                               <uix:TargetAnchorable.Anchors>
@@ -2134,8 +2134,8 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                             </uix:TargetAnchorable>
                                                                                           </uix:NClick.Target>
                                                                                         </uix:NClick>
-                                                                                        <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1334,91.33333333333333" sap2010:WorkflowViewState.IdRef="Delay_31" />
-                                                                                        <Pick sap2010:Annotation.AnnotationText="Address 2 possible outcomes after sign in was clicked" DisplayName="Check 2 Possible Screens" sap:VirtualizedContainerService.HintSize="1334,1680" sap2010:WorkflowViewState.IdRef="Pick_1">
+                                                                                        <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1328,90" sap2010:WorkflowViewState.IdRef="Delay_31" />
+                                                                                        <Pick sap2010:Annotation.AnnotationText="Address 2 possible outcomes after sign in was clicked" DisplayName="Check 2 Possible Screens" sap:VirtualizedContainerService.HintSize="1328,1455" sap2010:WorkflowViewState.IdRef="Pick_1">
                                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -2143,7 +2143,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                             </scg:Dictionary>
                                                                                           </sap:WorkflowViewStateService.ViewState>
-                                                                                          <PickBranch DisplayName="Error Found" sap:VirtualizedContainerService.HintSize="608.6666666666666,1602" sap2010:WorkflowViewState.IdRef="PickBranch_1">
+                                                                                          <PickBranch DisplayName="Error Found" sap:VirtualizedContainerService.HintSize="608,1377" sap2010:WorkflowViewState.IdRef="PickBranch_1">
                                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2151,7 +2151,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                               </scg:Dictionary>
                                                                                             </sap:WorkflowViewStateService.ViewState>
                                                                                             <PickBranch.Trigger>
-                                                                                              <uix:NCheckState DisplayName="Check App State 'Error'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,180" sap2010:WorkflowViewState.IdRef="NCheckState_25" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                                              <uix:NCheckState DisplayName="Check App State 'Error'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,177" sap2010:WorkflowViewState.IdRef="NCheckState_25" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                                 <uix:NCheckState.IfNotExists>
                                                                                                   <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,106" sap2010:WorkflowViewState.IdRef="Sequence_367">
                                                                                                     <sap:WorkflowViewStateService.ViewState>
@@ -2176,13 +2176,13 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                 </sap:WorkflowViewStateService.ViewState>
                                                                                               </uix:NCheckState>
                                                                                             </PickBranch.Trigger>
-                                                                                            <Sequence sap:VirtualizedContainerService.HintSize="558,1219.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_427">
+                                                                                            <Sequence sap:VirtualizedContainerService.HintSize="558,1001" sap2010:WorkflowViewState.IdRef="Sequence_427">
                                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                 </scg:Dictionary>
                                                                                               </sap:WorkflowViewStateService.ViewState>
-                                                                                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,1108.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_366">
+                                                                                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,890" sap2010:WorkflowViewState.IdRef="Sequence_366">
                                                                                                 <Sequence.Variables>
                                                                                                   <Variable x:TypeArguments="x:String" Name="ErrorTxt" />
                                                                                                 </Sequence.Variables>
@@ -2191,9 +2191,9 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                   </scg:Dictionary>
                                                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,399.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_23">
+                                                                                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,184" sap2010:WorkflowViewState.IdRef="TryCatch_23">
                                                                                                   <TryCatch.Try>
-                                                                                                    <uix:NGetText DisplayName="Get Text 'Error'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" TextString="[ErrorTxt]" Version="V4">
+                                                                                                    <uix:NGetText DisplayName="Get Text 'Error'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" TextString="[ErrorTxt]" Version="V4">
                                                                                                       <uix:NGetText.Target>
                                                                                                         <uix:TargetAnchorable BrowserURL="fa-ewqc-dev5-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" DesignTimeRectangle="643, 314, 641, 28" DesignTimeScaleFactor="1" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="da38a8d8-a8d9-4bc6-995d-403982a6d394" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='11e0qi45zn' title='Supplier: LUMEN TECHNOLOGIES NL BV - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                                                                                                           <uix:TargetAnchorable.Anchors>
@@ -2206,10 +2206,10 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                     </uix:NGetText>
                                                                                                   </TryCatch.Try>
                                                                                                   <TryCatch.Catches>
-                                                                                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,228.66666666666666" sap2010:WorkflowViewState.IdRef="Catch`1_23">
+                                                                                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_23">
                                                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                                                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                                         </scg:Dictionary>
                                                                                                       </sap:WorkflowViewStateService.ViewState>
@@ -2217,7 +2217,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                         <ActivityAction.Argument>
                                                                                                           <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                                                                         </ActivityAction.Argument>
-                                                                                                        <uix:NGetText DisplayName="Get Text 'Error'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" TextString="[ErrorTxt]" Version="V4">
+                                                                                                        <uix:NGetText DisplayName="Get Text 'Error'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" TextString="[ErrorTxt]" Version="V4">
                                                                                                           <uix:NGetText.Target>
                                                                                                             <uix:TargetAnchorable BrowserURL="fa-ewqc-dev5-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="53624848-3748-4747-ba72-06c54c892368" CvTextArea="956, 285, 118, 13" CvType="AnyWordGroup" DesignTimeRectangle="957, 285, 282, 22" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='x1ms' /&gt;" Guid="244a2c35-8e10-49a4-b32c-2748c3e357b4" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='90f4xuiim' title='Supplier: 5105 - RELX Inc. - I&amp;amp;O (US Corp) - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                                                                                               <uix:TargetAnchorable.Anchors>
@@ -2232,7 +2232,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                     </Catch>
                                                                                                   </TryCatch.Catches>
                                                                                                 </TryCatch>
-                                                                                                <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="434,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_119" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                                                <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_119" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                                   <uix:NClick.Target>
                                                                                                     <uix:TargetAnchorable BrowserURL="fa-ewqc-dev5-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="020fdc08-1ecf-408f-b2c1-7f4e75aa16a4" DesignTimeRectangle="1248, 359, 35, 28" DesignTimeScaleFactor="1" ElementType="Button" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='button' tag='BUTTON' class='xux p_AFTextOnly' aaname='OK' check:innerText='OK' /&gt;" Guid="96973875-38d6-4769-ab01-179640272f8b" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='11e0qi45zn' title='Supplier: LUMEN TECHNOLOGIES NL BV - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                                                                                                       <uix:TargetAnchorable.Anchors>
@@ -2241,7 +2241,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                     </uix:TargetAnchorable>
                                                                                                   </uix:NClick.Target>
                                                                                                 </uix:NClick>
-                                                                                                <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Cancel'" sap:VirtualizedContainerService.HintSize="434,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_120" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                                                <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Cancel'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_120" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                                   <uix:NClick.Target>
                                                                                                     <uix:TargetAnchorable BrowserURL="fa-ewqc-dev5-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" CVScreenId="88513d40-f95a-4955-8287-a77ee1903911" CvElementArea="1350, 865, 59, 30" CvTextArea="1358, 872, 42, 14" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="1352, 866, 56, 28" DesignTimeScaleFactor="1" ElementType="Button" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl aaname='Cancel' type='' tag='BUTTON' class='xux p_AFTextOnly' check:innerText='Cancel' /&gt;" Guid="12a28de3-9f03-456f-a22a-475c02ba1417" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAgCAYAAABO6BuSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKwSURBVFhH5ZlLbxMxEMf3y2TVfJ0mTb8JN0ja3LmA4IYoecIFceKEuHDJo487J6TSJPvKblsJOA0a22Ns705SCSpRZ6W/RuMZj+fnWUXVNoAdewJ3wffHAn7/aQKPn4/g0dM3XghZkMl8NDAGRh+/QJoX8OPnLy+ELMhkQmtgvI1FnEJxc+uVkAnZSsD4CqyvbyA35IuPbNXAhUxCKzaQTwUeaJwFzvICsvzakOEXjv+A4ncA9suywOk6h3RdGPLDZ4ETleCbZYHjdA1xtkEqPjoMIAj+KDy6sOKs/nV82BTnN4ZMXGk7MGsv4KiOkE0Y0fq8CyGCH76ryL9nO1DAAyauLAu8SjKI0gwixq70AUwcLV0ATb9zLuPzLtSE34UGxVtvjf3n0BGXacSovjpXqglDZ5364frfCEzCZNcOWvLAARNfJbLpfWxA54fQmWUQzSRwUO/CLMlg3gl1DPcPMVfF6GJFHbUPL47qY97czTN6d/tigZdxulEauCJmaXos4YRCaE+NtdZY5vRVs33cM4b9IIBa+6xUa9qWFyNqaF/1YNXgdY/AsnFq0GpWAWsos1k3VjrTlar5t8CLKBF/bKPFxJLfa8gDeneLTwh4klhQIt9odhGpizoYl87XNabbzyvFlc8Dqxvh7Rm01a80TlmsG6/qwpqUPW0L2Jkw+ubbY9Wx9qnz68cwxTxnwuV+t0z4Cm8kSkqWRH7vwHnFcDIq3jditT2cjpzAYkKNn8o6xnRk/VN4smfX1OerXKkG9Kgfp4bbN1kW2ITzSSzw1SoWt1Jln714aU+1Qq9en5T2/Q+WB8YkD8UCf1/FWng7vvgbgSnRJ8sDLyORpOWJzwObyR6pEhg/ZX79dgmXy8grIVPlZ1r8WH3y4bNX0MiCTJUf4gl6Z/7VsivPzgH/BsFMXScL6MUUAAAAAElFTkSuQmCC" InformativeScreenshot="55794e18db13d065890e4f5cbe4e50b2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jozfyg8na' title='Supplier: INGENIEURBUERO DIPL-ING HARALD DIEMER - Suppliers - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                                                                                                       <uix:TargetAnchorable.Anchors>
@@ -2263,7 +2263,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                               </Sequence>
                                                                                             </Sequence>
                                                                                           </PickBranch>
-                                                                                          <PickBranch DisplayName="Create Tax Window not closed" sap:VirtualizedContainerService.HintSize="546.6666666666666,1602" sap2010:WorkflowViewState.IdRef="PickBranch_2">
+                                                                                          <PickBranch DisplayName="Create Tax Window not closed" sap:VirtualizedContainerService.HintSize="546,1377" sap2010:WorkflowViewState.IdRef="PickBranch_2">
                                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2271,7 +2271,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                               </scg:Dictionary>
                                                                                             </sap:WorkflowViewStateService.ViewState>
                                                                                             <PickBranch.Trigger>
-                                                                                              <uix:NCheckState DisplayName="Check App State 'Error'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,180" sap2010:WorkflowViewState.IdRef="NCheckState_34" Mode="WaitDisappear" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                                                              <uix:NCheckState DisplayName="Check App State 'Error'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,177" sap2010:WorkflowViewState.IdRef="NCheckState_34" Mode="WaitDisappear" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                                                                 <uix:NCheckState.IfNotExists>
                                                                                                   <Sequence DisplayName="Target does not disappear" sap:VirtualizedContainerService.HintSize="450,106" sap2010:WorkflowViewState.IdRef="Sequence_429">
                                                                                                     <sap:WorkflowViewStateService.ViewState>
@@ -2296,13 +2296,13 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                 </sap:WorkflowViewStateService.ViewState>
                                                                                               </uix:NCheckState>
                                                                                             </PickBranch.Trigger>
-                                                                                            <Sequence sap:VirtualizedContainerService.HintSize="496,396.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_428">
+                                                                                            <Sequence sap:VirtualizedContainerService.HintSize="496,392" sap2010:WorkflowViewState.IdRef="Sequence_428">
                                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                 </scg:Dictionary>
                                                                                               </sap:WorkflowViewStateService.ViewState>
-                                                                                              <ueab:WriteCellX Cell="[row.ByField(&quot;Status - For Robot&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_41" Value="[If(String.IsNullOrWhiteSpace(row.ByField(&quot;Status - For Robot&quot;).ToString),&#xA;   &quot;Done Updating Tax Registration&quot;,&#xA;   &quot;Done Updating Tax Registration; &quot;+row.ByField(&quot;Status - For Robot&quot;).ToString)]">
+                                                                                              <ueab:WriteCellX Cell="[row.ByField(&quot;Status - For Robot&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_41" Value="[If(String.IsNullOrWhiteSpace(row.ByField(&quot;Status - For Robot&quot;).ToString),&#xA;   &quot;Done Updating Tax Registration&quot;,&#xA;   &quot;Done Updating Tax Registration; &quot;+row.ByField(&quot;Status - For Robot&quot;).ToString)]">
                                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2310,7 +2310,7 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                                   </scg:Dictionary>
                                                                                                 </sap:WorkflowViewStateService.ViewState>
                                                                                               </ueab:WriteCellX>
-                                                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_131">
+                                                                                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_131">
                                                                                                 <Assign.To>
                                                                                                   <OutArgument x:TypeArguments="x:Boolean">[IsTaxRegUpdateDone]</OutArgument>
                                                                                                 </Assign.To>
@@ -2486,12 +2486,12 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                       </If>
                                                                     </Sequence>
                                                                     <FlowStep.Next>
-                                                                      <FlowDecision x:Name="__ReferenceID12" Condition="[IsAddressFound]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="78.66666666666667,86.66666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_7">
+                                                                      <FlowDecision x:Name="__ReferenceID12" Condition="[IsAddressFound]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_7">
                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                             <av:Point x:Key="ShapeLocation">290.5,576.5</av:Point>
-                                                                            <av:Size x:Key="ShapeSize">78.66666666666667,86.66666666666667</av:Size>
+                                                                            <av:Size x:Key="ShapeSize">79,87</av:Size>
                                                                             <av:PointCollection x:Key="TrueConnector">290.5,620 150,620 150,684</av:PointCollection>
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
@@ -2500,11 +2500,11 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                 <av:Point x:Key="ShapeLocation">50,684</av:Point>
-                                                                                <av:Size x:Key="ShapeSize">200,53.333333333333336</av:Size>
+                                                                                <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                                                 <av:PointCollection x:Key="ConnectorLocation">150,737.3333333333334 150,767.3333333333335 250,767.3333333333335 250,814</av:PointCollection>
                                                                               </scg:Dictionary>
                                                                             </sap:WorkflowViewStateService.ViewState>
-                                                                            <If Condition="[If(&#xD;&#xA;    NxtDR Is Nothing,&#xD;&#xA;    True,&#xD;&#xA;    If(&#xD;&#xA;        Not(String.IsNullOrWhiteSpace(NxtDR(&quot;Status - For Robot&quot;).ToString)),&#xD;&#xA;        True,&#xD;&#xA;        (&#xD;&#xA;            Not(&#xD;&#xA;                NxtDR(&quot;Address Name&quot;).ToString.Trim.Equals(&#xD;&#xA;                    row.ByField(&quot;Address Name&quot;).ToString.Trim,&#xD;&#xA;                    StringComparison.OrdinalIgnoreCase&#xD;&#xA;                )&#xD;&#xA;            ) And&#xD;&#xA;            Not(&#xD;&#xA;                NxtDR(&quot;Supplier Name for Reference&quot;).ToString.Trim.Equals(&#xD;&#xA;                    row.ByField(&quot;Supplier Name for Reference&quot;).ToString.Trim,&#xD;&#xA;                    StringComparison.OrdinalIgnoreCase&#xD;&#xA;                )&#xD;&#xA;            ) And&#xD;&#xA;            Not(&#xD;&#xA;                NxtDR(&quot;Supplier Number&quot;).ToString.Trim.Equals(&#xD;&#xA;                    row.ByField(&quot;Supplier Number&quot;).ToString.Trim,&#xD;&#xA;                    StringComparison.OrdinalIgnoreCase&#xD;&#xA;                )&#xD;&#xA;            )&#xD;&#xA;        )&#xD;&#xA;    )&#xD;&#xA;)]" DisplayName="Save and close" sap:VirtualizedContainerService.HintSize="200,53.333333333333336" sap2010:WorkflowViewState.IdRef="If_14">
+                                                                            <If Condition="[If(&#xA;    NxtDR Is Nothing,&#xA;    True,&#xA;    If(&#xA;        Not(String.IsNullOrWhiteSpace(NxtDR(&quot;Status - For Robot&quot;).ToString)),&#xA;        True,&#xA;        (&#xA;            Not(&#xA;                NxtDR(&quot;Address Name&quot;).ToString.Trim.Equals(&#xA;                    row.ByField(&quot;Address Name&quot;).ToString.Trim,&#xA;                    StringComparison.OrdinalIgnoreCase&#xA;                )&#xA;            ) And&#xA;            Not(&#xA;                NxtDR(&quot;Supplier Name for Reference&quot;).ToString.Trim.Equals(&#xA;                    row.ByField(&quot;Supplier Name for Reference&quot;).ToString.Trim,&#xA;                    StringComparison.OrdinalIgnoreCase&#xA;                )&#xA;            ) And&#xA;            Not(&#xA;                NxtDR(&quot;Supplier Number&quot;).ToString.Trim.Equals(&#xA;                    row.ByField(&quot;Supplier Number&quot;).ToString.Trim,&#xA;                    StringComparison.OrdinalIgnoreCase&#xA;                )&#xA;            )&#xA;        )&#xA;    )&#xA;)]" DisplayName="Save and close" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="If_14">
                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2611,11 +2611,11 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                     <av:Point x:Key="ShapeLocation">150,814</av:Point>
-                                                                                    <av:Size x:Key="ShapeSize">200,53.333333333333336</av:Size>
+                                                                                    <av:Size x:Key="ShapeSize">200,53</av:Size>
                                                                                     <av:PointCollection x:Key="ConnectorLocation">464.0212883180686,637.7473028446653 584.0212883180686,637.7473028446653</av:PointCollection>
                                                                                   </scg:Dictionary>
                                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                                <If Condition="[If(&#xD;&#xA;    NxtDR Is Nothing,&#xD;&#xA;    False,&#xD;&#xA;    If(&#xD;&#xA;        Not(String.IsNullOrWhiteSpace(NxtDR(&quot;Status - For Robot&quot;).ToString)),&#xD;&#xA;        False,&#xD;&#xA;        (&#xD;&#xA;            NxtDR(&quot;Supplier Name for Reference&quot;).ToString.Trim.Equals(&#xD;&#xA;                row.ByField(&quot;Supplier Name for Reference&quot;).ToString.Trim,&#xD;&#xA;                StringComparison.OrdinalIgnoreCase&#xD;&#xA;            ) And&#xD;&#xA;            NxtDR(&quot;Supplier Number&quot;).ToString.Trim.Equals(&#xD;&#xA;                row.ByField(&quot;Supplier Number&quot;).ToString.Trim,&#xD;&#xA;                StringComparison.OrdinalIgnoreCase&#xD;&#xA;            )&#xD;&#xA;        )&#xD;&#xA;    )&#xD;&#xA;)]" DisplayName="Is Back to Address or Submit" sap:VirtualizedContainerService.HintSize="200,53.333333333333336" sap2010:WorkflowViewState.IdRef="If_34">
+                                                                                <If Condition="[If(&#xA;    NxtDR Is Nothing,&#xA;    False,&#xA;    If(&#xA;        Not(String.IsNullOrWhiteSpace(NxtDR(&quot;Status - For Robot&quot;).ToString)),&#xA;        False,&#xA;        (&#xA;            NxtDR(&quot;Supplier Name for Reference&quot;).ToString.Trim.Equals(&#xA;                row.ByField(&quot;Supplier Name for Reference&quot;).ToString.Trim,&#xA;                StringComparison.OrdinalIgnoreCase&#xA;            ) And&#xA;            NxtDR(&quot;Supplier Number&quot;).ToString.Trim.Equals(&#xA;                row.ByField(&quot;Supplier Number&quot;).ToString.Trim,&#xA;                StringComparison.OrdinalIgnoreCase&#xA;            )&#xA;        )&#xA;    )&#xA;)]" DisplayName="Is Back to Address or Submit" sap:VirtualizedContainerService.HintSize="200,53.333333333333336" sap2010:WorkflowViewState.IdRef="If_34">
                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2675,11 +2675,11 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <av:Point x:Key="ShapeLocation">390,258.5</av:Point>
-                                                                    <av:Size x:Key="ShapeSize">200,83.33333333333333</av:Size>
+                                                                    <av:Size x:Key="ShapeSize">200,81</av:Size>
                                                                     <av:PointCollection x:Key="ConnectorLocation">490,341.8333333333333 490,371.8333333333333 120,371.8333333333333 120,498.5</av:PointCollection>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <Sequence DisplayName="Is In The Same supplier" sap:VirtualizedContainerService.HintSize="200,83.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_422">
+                                                                <Sequence DisplayName="Is In The Same supplier" sap:VirtualizedContainerService.HintSize="200,81" sap2010:WorkflowViewState.IdRef="Sequence_422">
                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2717,10 +2717,10 @@ String.IsNullOrWhiteSpace((row.ByField("Tax Regime Code")))]</InArgument>
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <av:Point x:Key="ShapeLocation">570,603.3333333333334</av:Point>
-                                                        <av:Size x:Key="ShapeSize">200,53.333333333333336</av:Size>
+                                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <uix:NCheckState DisplayName="Check App State 'Supplier: 2201 - Elsevi…'" sap:VirtualizedContainerService.HintSize="200,53.333333333333336" sap2010:WorkflowViewState.IdRef="NCheckState_36" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
+                                                    <uix:NCheckState DisplayName="Check App State 'Supplier: 2201 - Elsevi…'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NCheckState_36" ScopeIdentifier="0971a137-da4f-4412-823d-560355165f96" Version="V4">
                                                       <uix:NCheckState.IfExists>
                                                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,200.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_432">
                                                           <sap:WorkflowViewStateService.ViewState>
